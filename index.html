@@ -11,8 +11,14 @@
       color: #222;
     }
 
+    .table-scroll {
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
     table {
       width: 100%;
+      min-width: 1250px;
       border-collapse: collapse;
     }
 
@@ -28,6 +34,46 @@
       text-align: left;
     }
 
+    th:nth-child(1),
+    td:nth-child(1) {
+      min-width: 40px;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+      min-width: 90px;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+      min-width: 100px;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4) {
+      min-width: 110px;
+    }
+
+    th:nth-child(5),
+    td:nth-child(5) {
+      min-width: 130px;
+    }
+
+    th:nth-child(6),
+    td:nth-child(6) {
+      min-width: 190px;
+    }
+
+    th:nth-child(7),
+    td:nth-child(7) {
+      min-width: 130px;
+    }
+
+    th:nth-child(8),
+    td:nth-child(8) {
+      min-width: 300px;
+    }
+
     .number,
     .year,
     .mileage,
@@ -38,6 +84,7 @@
 
     .opinion {
       width: 300px;
+      min-width: 300px;
     }
 
     a {
@@ -47,91 +94,93 @@
 </head>
 <body>
   <h1>Список Kia Rio</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>№</th>
-        <th>Ссылка на авто</th>
-        <th>Год выпуска</th>
-        <th>Пробег</th>
-        <th>Цена в объявлении</th>
-        <th>Цена по автооценке / катализатор</th>
-        <th>Ссылка на автотеку</th>
-        <th class="opinion">Краткая оценка</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="number">1</td>
-        <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_1.6_mt_2016_81_000_km_8139073612?utm_campaign=native&amp;utm_medium=item_page_ios&amp;utm_source=soc_sharing">Авито</a></td>
-        <td class="year">2016</td>
-        <td class="mileage">81 000 км</td>
-        <td class="price">1 175 000 ₽</td>
-        <td>1 087 600 ₽ / нет данных</td>
-        <td><a href="https://autoteka.ru/report/web/uuid/16f8596f-713f-4c06-b850-ab0cfed6babb?fromSource=afterPay">Автотека</a></td>
-        <td class="opinion">Лучший проверенный вариант: 1 владелец почти 10 лет, ДТП/страховых выплат/такси/залога/ограничений нет, пробег 81 тыс. Цена выше оценки, но машину стоит смотреть первой и торговаться.</td>
-      </tr>
-      <tr>
-        <td class="number">2</td>
-        <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_1.6_mt_2016_153_500_km_8061091277">Авито</a></td>
-        <td class="year">2016</td>
-        <td class="mileage">153 500 км</td>
-        <td class="price">985 000 ₽</td>
-        <td>930 600 ₽ / на месте</td>
-        <td><a href="https://autoteka.ru/report/web/uuid/950716fb-c9d4-472f-a845-e1489934b938?fromSource=afterPay">Автотека</a></td>
-        <td class="opinion">Хороший вариант по цене: 1 владелец, ДТП/выплат/такси/ограничений нет, цена близко к оценке. Минусы: большой пробег, нет техосмотров в отчете, продавался через дилера/перекупа; смотреть после торга.</td>
-      </tr>
-      <tr>
-        <td class="number">3</td>
-        <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_1.6_mt_2016_155_000_km_8062473148?context=H4sIAAAAAAAA_wFXAKj_YTozOntzOjEyOiJoYXNHZW9GaWx0ZXIiO2I6MTtzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjE7czoxOiJ4IjtzOjE2OiJmOUE5bUU0VG1nYVRPdGhOIjt9LGN31VcAAAA">Авито</a></td>
-        <td class="year">2016</td>
-        <td class="mileage">155 000 км</td>
-        <td class="price">1 150 000 ₽</td>
-        <td>941 000 ₽ / не удален</td>
-        <td><a href="https://autoteka.ru/report/web/uuid/5cbfe6e4-7b62-4c92-b549-9b95a4ae93c5?fromSource=afterPay">Автотека</a></td>
-        <td class="opinion">История чистая: 1 владелец, ДТП/выплат/такси/ограничений нет, есть дилерские ТО до 2020 года. Главный минус — цена примерно на 200 тыс. выше оценки при большом пробеге; смотреть только при сильном торге.</td>
-      </tr>
-      <tr>
-        <td class="number">4</td>
-        <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_1.6_at_2016_85_000_km_8059423795?utm_campaign=native&amp;utm_medium=item_page_android&amp;utm_source=soc_sharing">Авито</a></td>
-        <td class="year">2016</td>
-        <td class="mileage">85 000 км</td>
-        <td class="price">1 350 000 ₽</td>
-        <td>1 136 400 ₽ / нет данных</td>
-        <td><a href="https://autoteka.ru/report/web/uuid/23ef080f-1832-435f-97f5-1a89a3f43990?fromSource=afterPay">Автотека</a></td>
-        <td class="opinion">Чистая Автотека без ДТП/выплат/такси/ограничений, пробег небольшой и автомат. Но 3 владельца, нет техосмотров и цена сильно завышена; имеет смысл только если нужен именно автомат и дадут большой торг.</td>
-      </tr>
-      <tr>
-        <td class="number">5</td>
-        <td><a href="https://www.avito.ru/tolyatti/avtomobili/kia_rio_1.6_mt_2014_117_500_km_8090213413?context=H4sIAAAAAAAA_wFXAKj_YTozOntzOjEyOiJoYXNHZW9GaWx0ZXIiO2I6MTtzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjE7czoxOiJ4IjtzOjE2OiJaOFQyUVNidGprWnRTbTNuIjt9Gqcx_VcAAAA">Авито</a></td>
-        <td class="year">2014</td>
-        <td class="mileage">117 000 км</td>
-        <td class="price">865 000 ₽</td>
-        <td>787 000 ₽ / не удален</td>
-        <td class="opinion"></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td class="number">6</td>
-        <td><a href="https://www.avito.ru/petra_dubrava/avtomobili/kia_rio_1.6_mt_2015_92_000_km_8106570962?context=H4sIAAAAAAAA_wFXAKj_YTozOntzOjEyOiJoYXNHZW9GaWx0ZXIiO2I6MTtzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjE7czoxOiJ4IjtzOjE2OiJmOUE5bUU0VG1nYVRPdGhOIjt9LGN31VcAAAA">Авито</a></td>
-        <td class="year">2015</td>
-        <td class="mileage">92 000 км</td>
-        <td class="price">1 050 000 ₽</td>
-        <td>936 600 ₽ / не удален</td>
-        <td><a href="https://autoteka.ru/report/web/uuid/a97b0ac3-1b69-4a85-8315-b74db319a93b?fromSource=afterPay">Автотека</a></td>
-        <td class="opinion">Лучше пропустить: 3 владельца, ПТС дубликат, 2 ДТП в 2024 и 2025 годах, продавец дилер/перекуп, цена выше оценки. Даже без расчетов ремонта риск высокий.</td>
-      </tr>
-      <tr>
-        <td class="number">7</td>
-        <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_x-line_1.6_mt_2018_125_000_km_8007255337?utm_campaign=native&amp;utm_medium=item_page_android&amp;utm_source=soc_sharing">Авито</a></td>
-        <td class="year">2018</td>
-        <td class="mileage">125 000 км</td>
-        <td class="price">1 150 000 ₽</td>
-        <td>1 135 500 ₽ / нет данных</td>
-        <td><a href="https://autoteka.ru/report/web/uuid/0cd14c09-6e40-4f30-ae07-853a0914f728?fromSource=webSharing">Автотека</a></td>
-        <td class="opinion">Не смотреть: в Автотеке серьезное ДТП с изменением геометрии, расчет ремонта 750 тыс. – 1 млн ₽, подушки/ремни/стойка/подвеска в списке работ, плюс свежий расчет ремонта и пробег в отчете 145 861 км выше объявления.</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Ссылка на авто</th>
+          <th>Год выпуска</th>
+          <th>Пробег</th>
+          <th>Цена в объявлении</th>
+          <th>Цена по автооценке / катализатор</th>
+          <th>Ссылка на автотеку</th>
+          <th class="opinion">Краткая оценка</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="number">1</td>
+          <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_1.6_mt_2016_81_000_km_8139073612?utm_campaign=native&amp;utm_medium=item_page_ios&amp;utm_source=soc_sharing">Авито</a></td>
+          <td class="year">2016</td>
+          <td class="mileage">81 000 км</td>
+          <td class="price">1 175 000 ₽</td>
+          <td>1 087 600 ₽ / нет данных</td>
+          <td><a href="https://autoteka.ru/report/web/uuid/16f8596f-713f-4c06-b850-ab0cfed6babb?fromSource=afterPay">Автотека</a></td>
+          <td class="opinion">Лучший проверенный вариант: 1 владелец почти 10 лет, ДТП/страховых выплат/такси/залога/ограничений нет, пробег 81 тыс. Цена выше оценки, но машину стоит смотреть первой и торговаться.</td>
+        </tr>
+        <tr>
+          <td class="number">2</td>
+          <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_1.6_mt_2016_153_500_km_8061091277">Авито</a></td>
+          <td class="year">2016</td>
+          <td class="mileage">153 500 км</td>
+          <td class="price">985 000 ₽</td>
+          <td>930 600 ₽ / на месте</td>
+          <td><a href="https://autoteka.ru/report/web/uuid/950716fb-c9d4-472f-a845-e1489934b938?fromSource=afterPay">Автотека</a></td>
+          <td class="opinion">Хороший вариант по цене: 1 владелец, ДТП/выплат/такси/ограничений нет, цена близко к оценке. Минусы: большой пробег, нет техосмотров в отчете, продавался через дилера/перекупа; смотреть после торга.</td>
+        </tr>
+        <tr>
+          <td class="number">3</td>
+          <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_1.6_mt_2016_155_000_km_8062473148?context=H4sIAAAAAAAA_wFXAKj_YTozOntzOjEyOiJoYXNHZW9GaWx0ZXIiO2I6MTtzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjE7czoxOiJ4IjtzOjE2OiJmOUE5bUU0VG1nYVRPdGhOIjt9LGN31VcAAAA">Авито</a></td>
+          <td class="year">2016</td>
+          <td class="mileage">155 000 км</td>
+          <td class="price">1 150 000 ₽</td>
+          <td>941 000 ₽ / не удален</td>
+          <td><a href="https://autoteka.ru/report/web/uuid/5cbfe6e4-7b62-4c92-b549-9b95a4ae93c5?fromSource=afterPay">Автотека</a></td>
+          <td class="opinion">История чистая: 1 владелец, ДТП/выплат/такси/ограничений нет, есть дилерские ТО до 2020 года. Главный минус — цена примерно на 200 тыс. выше оценки при большом пробеге; смотреть только при сильном торге.</td>
+        </tr>
+        <tr>
+          <td class="number">4</td>
+          <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_1.6_at_2016_85_000_km_8059423795?utm_campaign=native&amp;utm_medium=item_page_android&amp;utm_source=soc_sharing">Авито</a></td>
+          <td class="year">2016</td>
+          <td class="mileage">85 000 км</td>
+          <td class="price">1 350 000 ₽</td>
+          <td>1 136 400 ₽ / нет данных</td>
+          <td><a href="https://autoteka.ru/report/web/uuid/23ef080f-1832-435f-97f5-1a89a3f43990?fromSource=afterPay">Автотека</a></td>
+          <td class="opinion">Чистая Автотека без ДТП/выплат/такси/ограничений, пробег небольшой и автомат. Но 3 владельца, нет техосмотров и цена сильно завышена; имеет смысл только если нужен именно автомат и дадут большой торг.</td>
+        </tr>
+        <tr>
+          <td class="number">5</td>
+          <td><a href="https://www.avito.ru/tolyatti/avtomobili/kia_rio_1.6_mt_2014_117_500_km_8090213413?context=H4sIAAAAAAAA_wFXAKj_YTozOntzOjEyOiJoYXNHZW9GaWx0ZXIiO2I6MTtzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjE7czoxOiJ4IjtzOjE2OiJaOFQyUVNidGprWnRTbTNuIjt9Gqcx_VcAAAA">Авито</a></td>
+          <td class="year">2014</td>
+          <td class="mileage">117 000 км</td>
+          <td class="price">865 000 ₽</td>
+          <td>787 000 ₽ / не удален</td>
+          <td></td>
+          <td class="opinion"></td>
+        </tr>
+        <tr>
+          <td class="number">6</td>
+          <td><a href="https://www.avito.ru/petra_dubrava/avtomobili/kia_rio_1.6_mt_2015_92_000_km_8106570962?context=H4sIAAAAAAAA_wFXAKj_YTozOntzOjEyOiJoYXNHZW9GaWx0ZXIiO2I6MTtzOjEzOiJsb2NhbFByaW9yaXR5IjtiOjE7czoxOiJ4IjtzOjE2OiJmOUE5bUU0VG1nYVRPdGhOIjt9LGN31VcAAAA">Авито</a></td>
+          <td class="year">2015</td>
+          <td class="mileage">92 000 км</td>
+          <td class="price">1 050 000 ₽</td>
+          <td>936 600 ₽ / не удален</td>
+          <td><a href="https://autoteka.ru/report/web/uuid/a97b0ac3-1b69-4a85-8315-b74db319a93b?fromSource=afterPay">Автотека</a></td>
+          <td class="opinion">Лучше пропустить: 3 владельца, ПТС дубликат, 2 ДТП в 2024 и 2025 годах, продавец дилер/перекуп, цена выше оценки. Даже без расчетов ремонта риск высокий.</td>
+        </tr>
+        <tr>
+          <td class="number">7</td>
+          <td><a href="https://www.avito.ru/samara/avtomobili/kia_rio_x-line_1.6_mt_2018_125_000_km_8007255337?utm_campaign=native&amp;utm_medium=item_page_android&amp;utm_source=soc_sharing">Авито</a></td>
+          <td class="year">2018</td>
+          <td class="mileage">125 000 км</td>
+          <td class="price">1 150 000 ₽</td>
+          <td>1 135 500 ₽ / нет данных</td>
+          <td><a href="https://autoteka.ru/report/web/uuid/0cd14c09-6e40-4f30-ae07-853a0914f728?fromSource=webSharing">Автотека</a></td>
+          <td class="opinion">Не смотреть: в Автотеке серьезное ДТП с изменением геометрии, расчет ремонта 750 тыс. – 1 млн ₽, подушки/ремни/стойка/подвеска в списке работ, плюс свежий расчет ремонта и пробег в отчете 145 861 км выше объявления.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
